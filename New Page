@@ -1,10 +1,11 @@
 <!DOCTPYE html>
 <html>
+<html Lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width'initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta http-equiv="refresh" content="2;http://msecoco.github.io/zero/">
+<title>msecoco</title>
+</head>
 <body style="margin:0;">
 <h1>测试页面跳转</h1>
 </body>
