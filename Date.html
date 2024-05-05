@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>日志</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial;
+        padding: 10px;
+        background: #f1f1f1;
+      }
+
+      /*头部标题*/
+      .header {
+        padding: 30px;
+        text-align: left;
+        background: #ff3778;
+        background-image: url(TERIRI.png);
+        background-repeat: no-repeat;
+        background-position: center top;
+      }
+
+      .header h1 {
+        font-size: 50px;
+      }
+
+      /*导航条*/
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      /*导航链接*/
+      .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      /*链接颜色修改*/
+      .topnav a:hover {
+        background-color: rgb(220, 20, 60);
+        color: black;
+      }
+
+      /* 创建两列 */
+      /* Left column */
+      .leftcolumn {
+        float: left;
+        width: 75%;
+      }
+
+      /*右侧栏*/
+      .rightcolumn {
+        float: left;
+        width: 25%;
+        background-color: #f1f1f1;
+        padding-left: 20px;
+      }
+
+      /*文章卡片效果*/
+      .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      /*列后面清除浮动*/
+      .row::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /*底部*/
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        margin-top: 20px;
+      }
+
+      /*响应式布局-屏幕尺寸小于800px时，两列布局改为上下布局*/
+      @media screen and (max-width: 800px) {
+        .leftcolum,
+        .rightcolumn {
+          width: 100%;
+          padding: 0;
+        }
+      }
+
+      /*响应式布局-屏幕尺寸小于400px时，导航等布局改为上下布局*/
+      @media screen and (max-width: 400px) {
+        .topnav a {
+          float: none;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>日志</h1>
+      <p>你好，欢迎</p>
+    </div>
+
+    <div class="topnav">
+      <a href="SnakeEat.html">小游戏</a>
+      <a href="#">链接（没想好）</a>
+      <a href="#">链接（没想好）</a>
+      <a href="index.html" style="float: right">返回</a>
+    </div>
+
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>想不出标题</h2>
+          <h5>2024年5月1日</h5>
+          <style>
+            img {
+              max-width: 100%;
+              height: auto;
+            }
+          </style>
+          <p>上传失败了……（或者没有？ ）</p>
+          <p>试着传到了GitHub上面，但是感觉不完善又给他删了，重新写</p>
+        </div>
+        <div class="card">
+          <h2>摸鱼</h2>
+          <h5>2024年4月30日</h5>
+          <style>
+            img {
+              max-width: 100%;
+              height: auto;
+            }
+          </style>
+          <img
+            src="https://tse4-mm.cn.bing.net/th/id/OIP-C.SsGWcfVjaeLSRaJVHzuOQAAAAA?w=126&h=180&c=7&r=0&o=5&dpr=1.9&pid=1.7"
+            alt="图片"
+          />
+          <p>开始精装修网站…</p>
+          <p>
+            得想办法解决图片的问题，直接把图片放服务器上怕流量撑不住，虽然这个网站应该不会有什么人访问就是了。现在的图片都是其他网站找的，然后复制他们的网址，但是B站和微博这些的好像没办法用这个方法。
+          </p>
+        </div>
+        <div class="card">
+          <h2>这是第一条博客</h2>
+          <h5>2024年4月30日</h5>
+          <style>
+            img {
+              max-width: 100%;
+              height: auto;
+            }
+          </style>
+          <img
+            src="https://tse4-mm.cn.bing.net/th/id/OIP-C.c0l3X56dUUd5-zOcbHvaLQHaHY?w=150&h=180&c=7&r=0&o=5&dpr=1.9&pid=1.7"
+            alt="图片"
+          />
+          <p>测试一下</p>
+          <p>哼哼哼这样个人博客就算差不多了</p>
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <div class="card">
+          <h2>关于我</h2>
+          <div class="fakeimg" style="height: 100px">没有图片</div>
+          <p>关于我的一些信息……没有信息</p>
+        </div>
+        <div class="card">
+          <h3>冷门文章</h3>
+          <div class="fakeimg"><p>图片</p></div>
+          <div class="fakeimg"><p>图片</p></div>
+          <div class="fakeimg"><p>图片</p></div>
+        </div>
+        <div class="card">
+          <h3>关注我</h3>
+          <p>不用关注了…</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <h2>到底了……</h2>
+      <h5>看什么看！没啦！</h5>
+    </div>
+  </body>
+</html>
