@@ -3,10 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <title>画廊</title>
-    <meta name="viewport" content="width=device-width,inital-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
+      * {
+        box-sizing: border-box;
+      }
+
       body {
-        margin: 0%;
+        margin: 0;
       }
 
       /*头部标题*/
@@ -15,11 +19,78 @@
         padding: 20px;
         text-align: center;
       }
+
+      /*导航条*/
+      .topnav a {
+        overflow: hidden;
+        background-color: #9e9e9e;
+      }
+
+      /*导航链接*/
+      。 .topnav a {
+        float: left;
+        display: block;
+        color: #ffffff;
+        text-align: center;
+        padding: 20px 40px;
+        text-decoration: none;
+      }
+
+      /*链接-修改颜色*/
+      .topnav a:hover {
+        background-color: #ffffff;
+        color: black;
+      }
+
+      /*创建列（两列width设为50%，四列设置为25%）*/
+      .column {
+        float: left;
+        width: 33.33%;
+      }
+
+      /*列后清除浮动*/
+      .row::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /*响应式布局（小于600px时改为上下布局）*/
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+        }
+      }
     </style>
   </head>
   <body>
     <div class="header">
       <h1 style="color: white">画廊</h1>
+    </div>
+
+    <div style="background-color: #9e9e9e; padding: 31px">
+      <div class="topnav">
+        <a href="html2.html">原创</a>
+        <a href="html2.html">同人</a>
+        <a href="html2.html">手绘</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <h2>标题1</h2>
+        <p>内容</p>
+      </div>
+
+      <div class="column">
+        <h2>标题2</h2>
+        <p>内容</p>
+      </div>
+
+      <div class="column">
+        <h2>标题3</h2>
+        <p>内容</p>
+      </div>
     </div>
   </body>
 </html>
